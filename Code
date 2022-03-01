@@ -1,0 +1,36 @@
+print ('Welcome to my computer quiz')
+playing=input("Do you want to play? ")
+if playing.lower()!="yes":
+    quit()
+print("Let's play the quiz!")
+score=0
+answer=input("In a computer, most processing takes place in _______?")
+if answer.lower()=="cpu":
+    print("Correct!")
+    score+=1
+else:
+    print("Incorrect!")
+
+answer=input("What is the full form of RAM?")
+if answer.lower()=="random access memory":
+    print("Correct!")
+    score+=1
+else:
+    print("Incorrect!")
+    
+answer=input("What is the full form of ROM?")
+if answer.lower()=="read only memory":
+    print("Correct!")
+    score+=1
+else:
+    print("Incorrect!")
+    
+answer=input("What is correcting errors in a program called?")
+if answer.lower()=="debugging":
+    print("Correct!")
+    score+=1
+else:
+    print("Incorrect!")
+    
+print("Congratulations!You have got "+str(score)+" questions correct!")
+print("You have got "+str(score/4*100)+"%")
